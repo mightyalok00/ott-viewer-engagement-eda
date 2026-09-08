@@ -71,8 +71,6 @@ The analytical workflow stays within **Python, NumPy, Pandas, Matplotlib, and Se
 ```text
 ott-viewer-engagement-eda/
 │
-├── Hotstar_Viewer_Engagement_EDA.ipynb   # Complete consolidated analysis
-│
 ├── 01_Business_Problem.ipynb
 ├── 02_Import_Libraries.ipynb
 ├── 03_Load_Dataset.ipynb
@@ -88,19 +86,18 @@ ott-viewer-engagement-eda/
 ├── 13_Top_Bottom_Content.ipynb
 ├── 14_Business_Insights.ipynb
 │
+├── OTT_Viewer_Engagement_Analysis_Report_Alok_Agarwal.pdf
 ├── ott_viewer_dropoff_retention_us_v1.0.csv
 ├── requirements.txt
 ├── .gitignore
 └── README.md
 ```
 
-### ⭐ Main Notebook
+### ⭐ Where to Start
 
-For the complete project in one place, open:
+Start with [01_Business_Problem.ipynb](01_Business_Problem.ipynb) and follow the 14 numbered notebooks in order to explore the workflow. Each stage is provided as a separate notebook.
 
-**`Hotstar_Viewer_Engagement_EDA.ipynb`**
-
-The 14 individual notebooks are retained to make each stage of the workflow easy to inspect independently.
+For a report overview, open the [analysis report (PDF)](OTT_Viewer_Engagement_Analysis_Report_Alok_Agarwal.pdf).
 
 ---
 
@@ -300,11 +297,18 @@ cd ott-viewer-engagement-eda
 
 ### 2. Create a virtual environment
 
-**Windows**
+**Windows (Command Prompt)**
 
-```bash
+```bat
 python -m venv .venv
 .venv\Scripts\activate
+```
+
+**Windows (PowerShell)**
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
 ```
 
 **macOS / Linux**
@@ -317,7 +321,7 @@ source .venv/bin/activate
 ### 3. Install dependencies
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ### 4. Start Jupyter
@@ -326,13 +330,9 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-Then open:
+Open `01_Business_Problem.ipynb` and follow the numbered notebooks through `14_Business_Insights.ipynb`. In each notebook, select the Python kernel for your virtual environment and run the cells from top to bottom.
 
-```text
-Hotstar_Viewer_Engagement_EDA.ipynb
-```
-
-The dataset should remain in the repository root. The notebook loads it using a **relative path**, so no personal or machine-specific file path is required.
+Start Jupyter from the repository root and keep the CSV beside the notebooks. The analysis notebooks load it using a **relative path**, so no personal or machine-specific file path is required when run from this folder.
 
 ---
 
